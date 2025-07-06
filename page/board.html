@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Board Of Direction</title>
+  <link rel="stylesheet" href="/assets/CSS/style.css">
+   <link rel="stylesheet" href="/assets/CSS/board.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ✅ Header (يشمل Top Strip + Main Header) -->
+  <div id="header-container"></div>
+
+  <!-- ✅ Hero Section -->
+<section class="page-hero">
+  <img src="/assets/img/who-banner.png" alt="Banner" />
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="/page/index.html">The Jerusalem Fund</a>
+      <span>&nbsp;>&nbsp;</span>
+      <span>Board Of Direction </span>
+    </div>
+    <h1>Board Of Direction </h1>
+    <p>
+      The Jerusalem Fund works to educate the United States’ public and<br>
+      policymakers about Palestine’s past, present and future, and provide<br>
+      community development support to communities in Palestine.
+    </p>
+  </div>
+</section>
+
+  <!-- ✅ Board Members Section -->
+<!-- ✅ Board Members Expanded Section -->
+<section class="board-expanded container">
+  <div class="board-card">
+    <img src="/assets/img/samera.png" alt="Samera Sood">
+    <div class="board-info">
+      <h3>Samera Sood</h3>
+      <p class="role">Immediate former President</p>
+      <p class="bio">
+she has been active since the association’s founding in 1986. In addition to her work with PAWA, 
+she was a leading board member of Al-Awda and the Los Angeles chapter of ADC, representing Al-
+Awda at the UNESCO International Conference in Paris in 2008. In 2004, she participated in a fact-
+finding mission to refugee camps in Syria and Lebanon and in 2009, she was also a part of George 
+Galloway’s trip to break the siege on Gaza. A native of Deir Debwan in Palestine, Ms. Sood is also a 
+business woman.      </p>
+    </div>
+  </div>
+
+  <div class="board-card">
+    <img src="/assets/img/tawfik.png" alt="Tawfik Z. Ramadan">
+    <div class="board-info">
+      <h3>Tawfik Z. Ramadan</h3>
+      <p class="role">Immediate former President</p>
+      <p class="bio">
+Tawfik Ramadan is currently a pediatrician at Southern Oklahoma Pediatrics, a private practice, 
+and neonatology director of the NICU (Neonatal Intensive Care Unit) at Valley View Regional Hospital in 
+Ada, Oklahoma. He was also director in the development and establishment of a pediatric ward and 
+NICU at Valley View Regional Hospital. Dr. Ramadan has been a medical officer in Palestine and 
+Jordan for UNRWA (United Nations Relief and Works Agency).      </p>
+    </div>
+  </div>
+
+  <div class="board-card">
+    <img src="/assets/img/rajai.png" alt="Rajai Khoury">
+    <div class="board-info">
+      <h3>Rajai Khoury</h3>
+            <p class="role">M.D., F.A.C.S., RPVI</p>
+
+      <p class="bio">
+ Dr. Khoury established and presided over the Khoury Surgical Group, Khoury Surgical Associates, 
+Khoury Vascular and Vein, and The Vein Clinic of the Ohio Valley. He served on the boards of 
+multiple healthcare establishments and continues to be an advisor and a medical volunteer with 
+multiple organizations. Currently, he is in the practice of vein and vascular medicine along with 
+Medicine.      </p>
+    </div>
+  </div>
+
+  <div class="board-card">
+    <img src="/assets/img/eid.png" alt="Eid B. Mustafa">
+    <div class="board-info">
+      <h3>Eid B. Mustafa</h3>
+      <p class="role">Vice-Chairman and Treasurer</p>
+      <p class="bio">
+received the Resident of the Year award, and attained plastic surgery training at Brown University in 
+Providence, Rhode Island. Dr. Mustafa is in private practice in Wichita Falls, Texas, where he is chief 
+of plastic surgery at United Regional Health Care System and at Kell West Regional Hospital. He 
+served as President of the Wichita County Medical Society, Vice President of the Texas Rehabilitation 
+Commission Medical Committee, and as Treasurer, Vice President, and President of the National 
+Arab American Medical Association (NAAMA)      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ✅ Footer -->
+  <div id="footer-container"></div>
+
+  <!-- ✅ Scripts to load Header & Footer -->
+  <script>
+    fetch('/components/header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-container').innerHTML = data);
+
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+
+</body>
+</html>

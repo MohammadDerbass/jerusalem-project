@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hisham Sharabi Memorial Library</title>
+  <link rel="stylesheet" href="/assets/CSS/style.css" />
+   <link rel="stylesheet" href="/assets/CSS/library.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <div id="header-container"></div>
+
+  <!-- ✅ Hero Section -->
+<section class="page-hero">
+  <img src="/assets/img/who-banner.png" alt="Banner" />
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="/page/index.html">The Jerusalem Fund</a>
+      <span>&nbsp;>&nbsp;</span>
+      <span> Hisham Sharabi Memorial Library </span>
+    </div>
+    <h1>Hisham Sharabi Memorial Library </h1>
+  </div>
+</section>
+
+  <!-- ✅ Main Content -->
+  <section class="library-content container">
+    <h3>Diabetes is affecting Palestinians in disproportionate numbers.</h3>
+
+    <p>
+      According to the Union of Palestinian Medical Relief Committee, 18 percent of the population has diabetes mellitus. However, this figure is closer to 30 percent when taking into account the people with pre-diabetes as well as those who are unaware that they are diabetics.
+    </p>
+
+    <p>
+      The disease can be managed with careful medical treatment and persistent follow-up. However, most Palestinians suffering from diabetes do not have the necessary access to affordable treatment and can suffer serious complications such as blindness, kidney failure, and circulation problems that lead to amputations. The problem is compounded by the unemployment, poverty, and daily stresses brought on by the entrenched Israeli occupation that infiltrates all aspects of life in Palestine. With the help of our donors, The Jerusalem Fund established the Palestine Diabetes Institute (PDI) in the central West Bank town of Al-Bireh in 2003. It is the first such facility in Palestine.
+    </p>
+
+    <p>
+      Over these years, the PDI’s patients experienced fewer complications from diabetes thanks to its hard work and your support.
+    </p>
+
+    <a href="#" class="btn-yellow-outline">Browse Digitalized Titles</a>
+  </section>
+
+  <!-- ✅ Footer -->
+  <div id="footer-container"></div>
+
+  <script>
+    fetch('/components/header.html').then(r => r.text()).then(data => document.getElementById('header-container').innerHTML = data);
+    fetch('/components/footer.html').then(r => r.text()).then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+
+</body>
+</html>

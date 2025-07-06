@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Palestine Diabetes Institute</title>
+  <link rel="stylesheet" href="/assets/CSS/style.css" />
+   <link rel="stylesheet" href="/assets/CSS/diabetes.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <div id="header-container"></div>
+
+  <!-- ✅ Hero Section -->
+<section class="page-hero">
+  <img src="/assets/img/who-banner.png" alt="Banner" />
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="/page/index.html">The Jerusalem Fund</a>
+      <span>&nbsp;>&nbsp;</span>
+      <span>Community Development </span>
+    </div>
+    <h1>Community Development </h1>
+    <p>
+     The Palestine Diabetes Institute addresses the growing diabetes epidemic in 
+     <br>Palestine through treatment, awareness, and education.
+    </p>
+  </div>
+</section>
+
+  <section class="diabetes-section container">
+  <div class="diabetes-box">
+    <img src="/assets/img/pdi-logo.png" alt="PDI Logo" class="diabetes-img" />
+    <div class="diabetes-info">
+      <h3>Diabetes is affecting Palestinians in disproportionate numbers.</h3>
+      <p>
+        According to the Union of Palestinian Medical Relief Committee, 18 percent of the population has diabetes mellitus. However, this figure is closer to 30 percent when taking into account the people with pre-diabetes as well as those who are unaware that they are diabetics.
+      </p>
+      <p>
+        The disease can be managed with careful medical treatment and persistent follow-up. However, most Palestinians suffering from diabetes do not have the necessary access to affordable treatment and can suffer serious complications such as blindness, kidney failure, and circulation problems that lead to amputations. The problem is compounded by the unemployment, poverty, and daily stresses brought on by the entrenched Israeli occupation that controls all aspects of life. With the help of our donors, The Jerusalem Fund established the Palestine Diabetes Institute (PDI) in the central West Bank town of Al-Bireh in 2009. It is the first such facility in Palestine.
+      </p>
+      <p>
+        Over these years, the PDI’s patients experienced fewer complications from diabetes thanks to its hard work and your support.
+      </p>
+    </div>
+  </div>
+
+  <div class="checkpoint-box">
+    <img src="/assets/img/checkpoints.png" alt="Checkpoints" class="checkpoint-img" />
+    <div class="checkpoint-info">
+      <h3>Travel restrictions, security checkpoints</h3>
+      <p>
+        Other hardships of life under occupation create a very difficult journey for many Palestinians seeking care. This is why the PDI opened its second clinic in 2013 in the northern city of Nablus, and its third clinic in 2016 in the southern city of Hebron.
+      </p>
+      <p>
+        With three clinics covering the northern, central, and southern regions of the West Bank, the PDI now provides Palestinians with greater access to treatment. In the future, we hope to open a clinic in Gaza as well.
+      </p>
+      <p>
+        Please consider <strong>donating</strong> today, and help us make a positive impact on the health and quality of life of Palestinians living under military occupation.
+      </p>
+      <p>
+        Founded in 1977 and based in the heart of Washington, DC, The Jerusalem Fund for Education and Community Development is a 501(c)(3) non-profit organization (Tax EIN# 52-1238142) and is not affiliated with any government. All donations are 100 percent tax-deductible and 100% of your contribution goes to the program that you designate. We strictly adhere to U.S. laws regarding contributions. The Fund is registered in all 50 states and in the District of Columbia.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ✅ Footer -->
+  <div id="footer-container"></div>
+
+  <script>
+    fetch('/components/header.html').then(r => r.text()).then(data => document.getElementById('header-container').innerHTML = data);
+    fetch('/components/footer.html').then(r => r.text()).then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+
+</body>
+</html>

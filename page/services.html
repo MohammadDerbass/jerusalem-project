@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>What We Do – The Jerusalem Fund</title>
+  <link rel="stylesheet" href="/assets/CSS/style.css" />
+   <link rel="stylesheet" href="/assets/CSS/services.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <div id="header-container"></div>
+
+  <!-- ✅ Hero Section -->
+<section class="page-hero">
+  <img src="/assets/img/who-banner.png" alt="Banner" />
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="/page/index.html">The Jerusalem Fund</a>
+      <span>&nbsp;>&nbsp;</span>
+      <span>What We Do </span>
+    </div>
+    <h1>What We Do </h1>
+    <p>
+     Through educational events, humanitarian support, and cultural preservation, the Jerusalem Fund is 
+     <br>helping build the movement for Palestinian liberation.
+    </p>
+  </div>
+</section>
+
+  <section class="what-we-do container">
+
+  <!-- 🔸 Card 1 -->
+  <div class="activity-card">
+    <img src="/assets/img/education.png" alt="Education" />
+    <div class="activity-info">
+      <h3>Education</h3>
+      <p class="sub">The Palestine Center</p>
+      <p>
+        comprises our educational programs. They give voice to the Palestinian narrative through policy briefings,
+        lecture series, conferences, symposia, scholarly research publications and an extensive research library.
+        The Palestine Center’s analysis emphasizes a Palestinian perspective on the peace process, the Right of Return
+        and final status negotiations, elections, international law, media coverage of Israel and Palestine and
+        U.S. foreign policy in the region.
+      </p>
+      <a href="/page/education.html" class="btn-main">Learn more</a>
+    </div>
+  </div>
+
+  <!-- 🔸 Card 2 -->
+  <div class="activity-card">
+    <img src="/assets/img/community.png" alt="Community Development" />
+    <div class="activity-info">
+      <h3>Community Development</h3>
+      <p class="sub">The Humanitarian Link</p>
+      <p>
+        program extends grants to hospitals, orphanages, clinics, schools, universities and civil society organizations
+        in the Occupied Territory and surrounding refugee camps in an effort to sustain the basic conditions of life in
+        Palestine and to overcome the burdens of occupation. Since 1979, the program has extended grants to hospitals,
+        orphanages, clinics, schools, universities and civil society organizations. <strong>Our grantees</strong> work
+        sustain the basic conditions of life in Palestine and to overcome the burdens of occupation.
+      </p>
+      <div class="btns">
+        <a href="#" class="btn-main">Learn more</a>
+        <a href="/page/diabetes.html" class="btn-alt">Palestine Diabetes Institute</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔸 Card 3 -->
+  <div class="activity-card">
+    <img src="/assets/img/culture.png" alt="Culture" />
+    <div class="activity-info">
+      <h3>Culture</h3>
+      <p class="sub">Gallery Al-Quds</p>
+      <p>
+        the cultural program of the Jerusalem Fund, showcases the rich culture and national heritage of the Palestinian
+        people, as well as that of surrounding Arab societies. The Gallery hosts bi-monthly exhibits of fine art and/or
+        photography, an annual juried art competition, a summer film screening series, evening musical performances,
+        art workshops and an annual souk and olive harvest celebration. In addition to regular grant making throughout
+        the year, the Humanitarian Link program supports its special project
+      </p>
+      <a href="/page/culture.html" class="btn-main">Learn more</a>
+    </div>
+  </div>
+
+</section>
+
+
+  <!-- ✅ Footer -->
+  <div id="footer-container"></div>
+
+  <script>
+    fetch('/components/header.html').then(r => r.text()).then(data => document.getElementById('header-container').innerHTML = data);
+    fetch('/components/footer.html').then(r => r.text()).then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+
+</body>
+</html>

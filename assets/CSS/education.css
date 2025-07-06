@@ -1,0 +1,360 @@
+/*education page*/
+.main-content-section {
+  width: 1350px;
+  height: 1763px;
+  margin: 0 auto; /* لتوسيط السكشن داخل الصفحة */
+  overflow: hidden; /* عشان ما يطلع محتوى خارجه لو زاد */
+  position: relative; /* لو بدك تضيف عناصر مطلقة داخله */
+}
+
+.education-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: nowrap; /* ممنوع يلف */
+  width: 1360px;      /* عرض كافي لثلاث كروت */
+  margin: 40px auto;
+}
+
+
+
+
+
+
+.education-cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 60px auto;
+}
+
+.edu-card {
+  width: 436px;
+  height: 533px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  border: 0.25px solid rgba(0, 0, 0, 0.25);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.edu-card img {
+  width: 386px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.edu-card h4 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 156%;
+  color: rgba(0, 0, 0, 1);
+  margin: 0 0 15px;
+  width: 386px;
+}
+
+.edu-card p {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 156%;
+  color: rgba(133, 133, 133, 1);
+  margin: 0 0 20px;
+  width: 386px;
+}
+
+.btn-yellow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 386px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(242, 183, 5, 1);
+  background-color: rgba(242, 183, 5, 0.01);
+  color: rgba(242, 183, 5, 1);
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+   margin-top: auto;
+}
+
+.btn-yellow:hover {
+  background-color: rgba(242, 183, 5, 1);
+  color: black;
+}
+
+
+
+/*blog section*/
+.blog-section {
+  width: 1360px;
+  margin: 60px auto;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+.see-all-btn {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(242, 183, 5, 1);
+}
+
+.blog-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: nowrap;
+}
+
+.blog-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, sans-serif;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* Tag داخل الصورة */
+.blog-card .tag {
+  position: relative;
+  top: -160px;
+  left: 10px;
+  background-color: rgba(242, 183, 5, 1);
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 999px;
+  display: inline-block;
+  width: fit-content;
+  z-index: 2;
+}
+
+.blog-card h4 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 124%;
+  letter-spacing: 3%;
+  color: #000;
+  margin: 12px 0 6px;
+  width: 317px;
+}
+
+.blog-card .date {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 124%;
+  letter-spacing: 3%;
+  color: #888;
+  margin: 0 0 10px;
+}
+
+
+
+
+
+/* ✅ Videos Section */
+.videos-section {
+  width: 100%;
+  max-width: 1360px;
+  margin: 80px auto;
+  padding: 0 20px; /* عشان ما يلزقوا بالحواف */
+}
+
+
+.videos-section h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.videos-section .section-desc {
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #777;
+  line-height: 156%;
+  letter-spacing: 0;
+  max-width: 1340px;
+  margin-bottom: 17px;
+}
+
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 30px;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+}
+
+.video-card img {
+  width: 100%;
+  height: 239px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.video-card h4 {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.4;
+  margin: 0 0 6px 0;
+  display: block;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.video-card .date {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #666;
+  margin: 0;
+}
+
+
+
+/* ✅ Responsive – Education Page */
+@media (max-width: 1024px) {
+  .main-content-section {
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+  }
+
+  .education-cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .edu-card {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .edu-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .edu-card h4,
+  .edu-card p,
+  .btn-yellow {
+    width: 100%;
+  }
+
+  .edu-card h4 {
+    font-size: 18px;
+  }
+
+  .edu-card p {
+    font-size: 14px;
+  }
+
+  .btn-yellow {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .blog-section {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .blog-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blog-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .blog-card h4 {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-card img {
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .videos-section {
+    padding: 0 15px;
+  }
+
+  .videos-section h2 {
+    font-size: 20px;
+  }
+
+  .videos-section .section-desc {
+    font-size: 14px;
+  }
+
+  .video-card h4 {
+    font-size: 16px;
+  }
+
+  .video-card .date {
+    font-size: 11px;
+  }
+}
+

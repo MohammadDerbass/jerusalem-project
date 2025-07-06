@@ -1,0 +1,176 @@
+/*employee page*/
+.page-hero {
+  position: relative;
+  width: 1939px;         /* عرض ثابت */
+  height: 450px;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  margin: 0 auto;        /* يخليها بالنص */
+}
+
+.page-hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1939px;         /* نفس العرض */
+  height: 396px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+
+.page-hero div {
+  position: relative;
+  z-index: 1;
+  padding: 40px 60px;
+  width: 100%;
+}
+
+.page-hero p{
+  font-size: 20px;
+  color: #ddd;
+}
+
+.page-hero h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.page-hero p:last-of-type {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.breadcrumb {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.breadcrumb a {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* عمودين تلقائيًا */
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.job-card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  transition: 0.3s ease;
+}
+
+.job-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.job-card .icon {
+  font-size: 32px;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+.job-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.job-card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.job-card .deadline {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+.job-card .deadline i {
+  margin-right: 6px;
+}
+
+/* ✅ Responsive – Employee Page */
+@media (max-width: 1024px) {
+  .page-hero {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .page-hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .page-hero div {
+    padding: 20px;
+  }
+
+  .page-hero h1 {
+    font-size: 28px;
+  }
+
+  .page-hero p {
+    font-size: 14px;
+  }
+
+  .jobs-grid {
+    grid-template-columns: 1fr;
+    padding: 30px 15px;
+  }
+
+  .job-card {
+    padding: 20px;
+  }
+
+  .job-card h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .job-card p,
+  .job-card .deadline {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .job-card .icon {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+  }
+}

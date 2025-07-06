@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Media Library - The Jerusalem Fund</title>
+  <link rel="stylesheet" href="/assets/CSS/style.css" />
+   <link rel="stylesheet" href="/assets/CSS/media-library.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <div id="header-container"></div>
+
+      <!-- ✅ Hero Section -->
+<section class="page-hero">
+  <img src="/assets/img/who-banner.png" alt="Banner" />
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="/page/index.html">The Jerusalem Fund</a>
+      <span>&nbsp;>&nbsp;</span>
+      <span> Media Library </span>
+    </div>
+    <h1>Media Library </h1>
+    <p>
+     Watch key recordings from The Jerusalem Fund & Palestine Center’s programs and initiatives. These 
+     <br>select videos highlight expert discussions, lectures, and important moments from our events.
+    </p>
+  </div>
+</section>
+
+<section class="videos-section container">
+  <h2>Videos</h2>
+  <p class="section-desc">
+    Many of our programs are recorded and made available online. Here are the latest videos we’ve published. Visit our blog for more on these programs, and subscribe to our YouTube channel.
+  </p>
+
+  <div class="video-grid">
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Voices for Change">
+      <h4>Voices for Change: Advocacy in Action</h4>
+      <p class="date">June 15, 2025</p>
+    </div>
+
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Sustainable Futures">
+      <h4>Sustainable Futures: Innovations in Green Technology</h4>
+      <p class="date">July 20, 2025</p>
+    </div>
+
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Empowering Communities">
+      <h4>Empowering Communities: Building Local Resilience</h4>
+      <p class="date">August 10, 2025</p>
+    </div>
+
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Cultural Connections">
+      <h4>Cultural Connections: Celebrating Diversity Through Art</h4>
+      <p class="date">September 5, 2025</p>
+    </div>
+
+     <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Cultural Connections">
+      <h4>Cultural Connections: Celebrating Diversity Through Art</h4>
+      <p class="date">September 5, 2025</p>
+    </div>
+
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Digital Transformation">
+      <h4>Digital Transformation: The Future of Remote Work</h4>
+      <p class="date">October 12, 2025</p>
+    </div>
+
+        <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Digital Transformation">
+      <h4>Digital Transformation: The Future of Remote Work</h4>
+      <p class="date">October 12, 2025</p>
+    </div>
+
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Health Matters">
+      <h4>Health Matters: Advances in Mental Wellness Support</h4>
+      <p class="date">November 18, 2025</p>
+    </div>
+
+        <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Health Matters">
+      <h4>Health Matters: Advances in Mental Wellness Support</h4>
+      <p class="date">November 18, 2025</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ✅ Footer -->
+  <div id="footer-container"></div>
+
+  <script>
+    fetch('/components/header.html').then(r => r.text()).then(data => document.getElementById('header-container').innerHTML = data);
+    fetch('/components/footer.html').then(r => r.text()).then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Education | The Palestine Center</title>
+  <link rel="stylesheet" href="/assets/CSS/style.css" />
+   <link rel="stylesheet" href="/assets/CSS/education.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <div id="header-container"></div>
+
+      <!-- ✅ Hero Section -->
+<section class="page-hero">
+  <img src="/assets/img/who-banner.png" alt="Banner" />
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="/page/index.html">The Jerusalem Fund</a>
+      <span>&nbsp;>&nbsp;</span>
+      <span> The Palestine Center   </span>
+    </div>
+    <h1>Education | The Palestine Center </h1>
+    <p>
+     The Palestine Center is an independent educational program committed to communicating reliable and 
+     <br>objective information about the Palestinian political experience to American policy makers, journalists, 
+     <br>students, and the general public.
+    </p>
+  </div>
+</section>
+
+<!-- ✅ Main Combined Section -->
+<section class="main-content-section">
+
+  <!-- ✅ Info Cards Section -->
+  <div class="education-cards">
+    <div class="edu-card">
+      <img src="/assets/img/edu1.png" alt="Annual Conference">
+      <h4>Annual Conference</h4>
+      <p>Our annual conferences bring together policymakers, academics, and activists to promote a deeper understanding of the issues facing Palestine, the Middle East, and the United States’ relation to the region.</p>
+      <a href="#" class="btn-yellow">Watch 2022 Annual Conference</a>
+    </div>
+
+    <div class="edu-card">
+      <img src="/assets/img/edu2.png" alt="Intern Lecture Series">
+      <h4>Intern Lecture Series</h4>
+      <p>Each summer the Palestine Center interns plan and execute the summer intern lecture series. The interns decide on a theme, reach out to speakers, and handle all logistics of the planning process.</p>
+      <a href="#" class="btn-yellow">Learn more</a>
+    </div>
+
+    <div class="edu-card">
+      <img src="/assets/img/edu3.png" alt="Library">
+      <h4>Hisham Sharabi Memorial Library</h4>
+      <p>Our library contains nearly 3,000 texts about the Palestinian struggle, the Palestinian-Israeli conflict, Palestinian society, Zionism, and Arab history, society, and culture.</p>
+      <a href="#" class="btn-yellow">Access library database – Coming soon</a>
+    </div>
+  </div>
+
+  <!-- ✅ Blogs Section -->
+  <div class="blog-section container">
+    <div class="section-header">
+      <h2>Blogs</h2>
+      <a href="/page/blogs.html" class="see-all-btn">See all</a>
+    </div>
+
+    <div class="blog-cards">
+    <div class="blog-card">
+  <img src="/assets/img/blog5.png" alt="Blog 5">
+  <span class="tag">Advocacy</span>
+  <h4>Voices for Change: Advocacy in Action</h4>
+  <p class="date">June 15, 2025</p>
+</div>
+
+     <div class="blog-card">
+  <img src="/assets/img/blog6.png" alt="Blog 6">
+  <span class="tag">Creativity</span>
+  <h4>Fostering Creativity: Art for Social Change</h4>
+  <p class="date">June 15, 2025</p>
+</div>
+
+     <div class="blog-card">
+  <img src="/assets/img/blog7.png" alt="Blog 7">
+  <span class="tag">Sustainability</span>
+  <h4>Sustainable Innovations: Leading the Way</h4>
+  <p class="date">June 15, 2025</p>
+</div>
+
+     <div class="blog-card">
+  <img src="/assets/img/blog8.png" alt="Blog 8">
+  <span class="tag">Mental Health</span>
+  <h4>Mental Health Awareness: Breaking the Stigma</h4>
+  <p class="date">June 15, 2025</p>
+</div>
+
+    </div>
+  </div>
+
+ <!-- ✅ Videos Section -->
+<div class="videos-section container">
+  <h2>Videos</h2>
+  <p class="section-desc">
+    Many of our programs are recorded and made available online. Here are the latest videos we’ve published. Visit our blog for more on these programs, and subscribe to our YouTube channel.
+  </p>
+
+  <div class="video-grid">
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Voices for Change">
+      <h4>Voices for Change: Advocacy in Action</h4>
+      <p class="date">June 15, 2025</p>
+    </div>
+
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Sustainable Futures">
+      <h4>Sustainable Futures: Innovations in Green Technology</h4>
+      <p class="date">July 20, 2025</p>
+    </div>
+
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Empowering Communities">
+      <h4>Empowering Communities: Building Local Resilience</h4>
+      <p class="date">August 10, 2025</p>
+    </div>
+
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Cultural Connections">
+      <h4>Cultural Connections: Celebrating Diversity Through Art</h4>
+      <p class="date">September 5, 2025</p>
+    </div>
+
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Digital Transformation">
+      <h4>Digital Transformation: The Future of Remote Work</h4>
+      <p class="date">October 12, 2025</p>
+    </div>
+
+    <div class="video-card">
+      <img src="/assets/img/vid.png" alt="Health Matters">
+      <h4>Health Matters: Advances in Mental Wellness Support</h4>
+      <p class="date">November 18, 2025</p>
+    </div>
+  </div>
+</div>
+
+
+
+</section>
+
+
+  <!-- ✅ Footer -->
+  <div id="footer-container"></div>
+
+  <script>
+    fetch('/components/header.html').then(r => r.text()).then(data => document.getElementById('header-container').innerHTML = data);
+    fetch('/components/footer.html').then(r => r.text()).then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+
+</body>
+</html>

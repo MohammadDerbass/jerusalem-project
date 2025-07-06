@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Employment Opportunities</title>
+  <link rel="stylesheet" href="/assets/CSS/style.css">
+   <link rel="stylesheet" href="/assets/CSS/employment.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <div id="header-container"></div>
+
+  <!-- ✅ Hero Section -->
+<section class="page-hero">
+  <img src="/assets/img/who-banner.png" alt="Banner" />
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="/page/index.html">The Jerusalem Fund</a>
+      <span>&nbsp;>&nbsp;</span>
+      <span>Employment Opportunities </span>
+    </div>
+    <h1>Employment Opportunities </h1>
+    <p>
+     The Jerusalem Fund works to educate the United States’ public and 
+     <br>policymakers about Palestine’s past, present and future, and provide 
+     <br>community development support to communities in Palestine.
+    </p>
+  </div>
+</section>
+
+  <!-- ✅ Job Cards -->
+<section class="jobs-grid container">
+  <!-- Card 1 -->
+  <div class="job-card">
+    <i class="fas fa-laptop-code icon"></i>
+    <h3>Front-End Developer</h3>
+    <p>We’re seeking a passionate Front-End Developer to join our team and help translate UI/UX designs into high-quality, performant web applications.</p>
+    <p class="deadline"><i class="fas fa-calendar-alt"></i> Deadline: 12 Jan 2025</p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="job-card">
+    <i class="fas fa-laptop-code icon"></i>
+    <h3>Front-End Developer</h3>
+    <p>Help translate UI/UX designs into high-quality applications while collaborating with designers and backend engineers.</p>
+    <p class="deadline"><i class="fas fa-calendar-alt"></i> Deadline: 12 Jan 2025</p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="job-card">
+    <i class="fas fa-server icon"></i>
+    <h3>Back-End Developer</h3>
+    <p>We’re looking for a skilled Back-End Developer to build and maintain server-side logic and APIs for our scalable applications.</p>
+    <p class="deadline"><i class="fas fa-calendar-alt"></i> Deadline: 20 Jan 2025</p>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="job-card">
+    <i class="fas fa-server icon"></i>
+    <h3>Back-End Developer</h3>
+    <p>Ensure high performance and responsiveness of apps by optimizing backend infrastructure and managing databases efficiently.</p>
+    <p class="deadline"><i class="fas fa-calendar-alt"></i> Deadline: 20 Jan 2025</p>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="job-card">
+    <i class="fas fa-laptop-code icon"></i>
+    <h3>Front-End Developer</h3>
+    <p>Join our UI team to deliver elegant, accessible, and responsive front-end solutions across multiple platforms and browsers.</p>
+    <p class="deadline"><i class="fas fa-calendar-alt"></i> Deadline: 12 Jan 2025</p>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="job-card">
+    <i class="fas fa-server icon"></i>
+    <h3>Back-End Developer</h3>
+    <p>Develop scalable server-side solutions using Node.js and ensure smooth integration with front-end services and databases.</p>
+    <p class="deadline"><i class="fas fa-calendar-alt"></i> Deadline: 20 Jan 2025</p>
+  </div>
+</section>
+
+
+  <!-- ✅ Footer -->
+  <div id="footer-container"></div>
+
+  <script>
+    fetch('/components/header.html').then(r => r.text()).then(data => document.getElementById('header-container').innerHTML = data);
+    fetch('/components/footer.html').then(r => r.text()).then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+
+</body>
+</html>

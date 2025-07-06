@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Who We Are – The Jerusalem Fund</title>
+
+  <link rel="stylesheet" href="/assets/CSS/style.css" />
+   <link rel="stylesheet" href="/assets/CSS/about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <div id="header"></div>
+
+<section class="page-hero">
+  <img src="/assets/img/who-banner.png" alt="Banner" />
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="/page/index.html">The Jerusalem Fund</a>
+      <span>&nbsp;>&nbsp;</span>
+      <span>Who we are</span>
+    </div>
+    <h1>Who we are</h1>
+    <p>
+      The Jerusalem Fund works to educate the United States’ public and
+      policymakers about Palestine’s past, present and future, and provide
+      community development support to communities in Palestine.
+    </p>
+  </div>
+</section>
+
+
+
+
+
+  <!-- ✅ Main Content -->
+<section class="about-section">
+  <div class="about-container">
+    <img src="/assets/img/quds.svg" alt="Dome of the Rock" class="about-image" />
+
+    <div class="about-text">
+      <h2>Empowering Communities,<br />Preserving Heritage</h2>
+      <p>
+        Since our founding in Washington, D.C. in 1991, The Jerusalem Fund has
+        worked tirelessly to uplift Palestinian communities through education,
+        cultural preservation, and sustainable development. Guided by principles of
+        transparency, compassion, and solidarity, we partner with local leaders and
+        institutions to deliver scholarships, healthcare programs, and emergency aid —
+        touching hundreds of thousands of lives across the region.
+      </p>
+      <p>
+        Despite the precarious ceasefire bringing limited food insecurity, of which
+        <strong>345,000 are experiencing catastrophic levels of hunger</strong>... 
+        <a href="#">read more</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ✅ Section: History with Background -->
+<!-- ✅ Section: History with Background -->
+<section class="history-banner">
+  <div class="history-overlay">
+    <h2>History</h2>
+    <p>
+      As over 1 billion Muslims observe the holy month of Ramadan, a sacred time of spirituality, reflection, and community solidarity,
+      Palestinians continue to endure immense hardship and unbearable suffering. In these unprecedented times Palestinians continue
+      to endure immense hardship and unbearable suffering. In these unprecedented times, the gravity of the crisis compels us to reach out for your support.
+    </p>
+    <a href="/page/history.html" class="learn-more-btn">Learn more</a>
+  </div>
+</section>
+
+
+<!-- ✅ Section: Meet Our Staff -->
+<section class="staff-section">
+  <div class="container">
+    <div class="staff-card">
+      <img src="/assets/img/tarek.png" alt="Tarek Nasr" />
+      <div class="staff-info">
+        <h3 class="staff-name">Tarek Nasr</h3>
+        <p class="staff-title">Finance and Operations Manager</p>
+        <p class="staff-bio">
+          Tarek Nasr is a graduate of American University’s School of International Service, where he majored in International Studies with a focus on the MENA region. Prior to working at The Jerusalem Fund, he worked with the Elephant in the Room Initiative, an organization of Jewish and Israeli professors speaking out against the Israeli occupation. He is excited to use his knowledge and past experiences to continue working for a brighter future in the region.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- ✅ Footer -->
+  <div id="footer"></div>
+
+  <!-- ✅ Load Shared Header & Footer -->
+  <script>
+    fetch("/components/header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+
+    fetch("/components/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

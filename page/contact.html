@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Contact Us – The Jerusalem Fund</title>
+  <link rel="stylesheet" href="/assets/CSS/style.css" />
+   <link rel="stylesheet" href="/assets/CSS/contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <div id="header-container"></div>
+
+  <!-- ✅ Contact Main Section -->
+  <section class="contact-main container">
+    <div class="contact-content">
+      <h4>Contact Us</h4>
+      <h2>Your Voice, Our Mission</h2>
+      <p>
+        The Jerusalem Fund is a non-profit organization devoted to supporting education, development, and humanitarian programs in Palestine and the broader Middle East. We welcome your questions, feedback, and partnership inquiries. Please complete the form below or use any of the contact methods listed to reach our team.
+      </p>
+      <ul class="contact-info">
+        <li><i class="fas fa-phone"></i> +972-2-627-0202</li>
+        <li><i class="fas fa-fax"></i> +972-2-627-0203</li>
+        <li><i class="fas fa-envelope"></i> info@jerusalemfund.org</li>
+        <li><i class="fas fa-map-marker-alt"></i> 123 Al-Quds Street, Jerusalem, Palestine</li>
+      </ul>
+    </div>
+<div class="contact-form">
+  <input type="text" placeholder="Full Name" />
+
+  <div class="phone-input">
+    <div class="country-code">
+      <img src="/assets/img/ps-flag.png" alt="Palestine Flag" />
+      <span>972</span>
+      <i class="fas fa-caret-down"></i>
+    </div>
+    <input type="text" placeholder="Phone Number" />
+  </div>
+
+  <textarea rows="5" placeholder="Message \ Inquiry"></textarea>
+
+  <div class="form-bottom">
+    <small>
+      Please fill out the form below and one of our team members will get back to you—usually within two business days.
+    </small>
+    <button type="submit">Send</button>
+  </div>
+</div>
+
+  </section>
+
+<!-- ✅ Location Section -->
+<section class="contact-location container">
+  <div class="loc-card">
+    <img src="/assets/img/map.png" alt="Map" />
+    <div class="loc-info">
+      <h4>Location & Parking</h4>
+      <p>
+        The offices of The Jerusalem Fund and its educational program, the Palestine Center, 
+        are located on the ground level of the Potomac Plaza Building. The building is located 
+        near the Foggy Bottom Metro Station (orange and blue lines), on the Metrobus Line 80.
+      </p>
+    </div>
+  </div>
+
+  <div class="loc-card">
+    <img src="/assets/img/potomac.png" alt="Potomac Plaza" />
+    <div class="loc-info">
+      <h4>Limited parking is available on the street.</h4>
+      <p>
+        There is no parking available at the Potomac Plaza building. Only six spaces are available 
+        in front of The Jerusalem Fund offices and are shared with the building and a hair salon. 
+        To use them, please plan accordingly.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ✅ Footer -->
+  <div id="footer-container"></div>
+
+  <!-- ✅ Load Header/Footer -->
+  <script>
+    fetch('/components/header.html').then(res => res.text()).then(data => document.getElementById('header-container').innerHTML = data);
+    fetch('/components/footer.html').then(res => res.text()).then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+
+</body>
+</html>

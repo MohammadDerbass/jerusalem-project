@@ -1,0 +1,184 @@
+/* حاوية الحدث الأساسية */
+.event-detail-section {
+  max-width: 1360px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+/* بطاقة الحدث */
+.event-detail-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* لجعل الصورة فوق النص */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* الصورة */
+.event-detail-card .event-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+/* محتوى الحدث */
+.event-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* التاريخ */
+.event-date {
+  width: 50px;
+  border-radius: 12px;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: black;
+  user-select: none;
+  margin: 0 auto;
+}
+
+.event-date .month {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.event-date .day {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  padding: 6px 0;
+}
+
+.event-date .weekday {
+  min-width: 70px;
+  height: 32px;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 6px 0;
+  margin-top: 4px;
+  text-align: center;
+  line-height: 20px; /* عشان النص يتوضع وسط عمودياً */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* معلومات الحدث (العنوان، الفقرات، الزر) */
+.event-detail-info {
+  flex-grow: 1;
+  font-family: Helvetica, sans-serif;
+  color: #000;
+}
+
+.event-detail-info h2 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.event-detail-info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* النص اللي يحتوي على العنوان ووقت الحدث */
+.event-detail-info p strong {
+  font-weight: 700;
+  color: black;
+}
+
+/* زر المشاركة */
+.participate-btn.full-width {
+  width: 100%;
+  background-color: #f2b705;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.participate-btn.full-width:hover {
+  background-color: #d1a800;
+  color: white;
+}
+
+
+/* ✅ Responsive – Event Detail Page */
+@media (max-width: 1024px) {
+  .event-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .event-date {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  .event-date .day {
+    font-size: 28px;
+  }
+
+  .event-date .month {
+    font-size: 13px;
+  }
+
+  .event-date .weekday {
+    min-width: auto;
+    width: 100%;
+    font-size: 13px;
+    padding: 5px 0;
+  }
+
+  .event-detail-info {
+    text-align: center;
+  }
+
+  .event-detail-info h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .event-detail-info p {
+    font-size: 14px;
+  }
+
+  .participate-btn.full-width {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .event-detail-card {
+    padding: 15px;
+  }
+
+  .event-detail-section {
+    padding: 0 15px;
+  }
+}

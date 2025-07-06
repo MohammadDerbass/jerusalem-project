@@ -1,0 +1,261 @@
+
+/* ✅ Events Section */
+.events-section {
+  max-width: 1350px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.section-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.highlight-yellow {
+  color: #f2b705;
+}
+
+.section-desc {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 156%;
+  color: #8c8c8c;
+  max-width: 1049px;
+}
+
+.see-all-btn {
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+  background-color: white;
+  border: 1px solid #f2b705;
+  border-radius: 999px;
+  padding: 6px 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.see-all-btn:hover {
+  background-color: #f2b705;
+  color: white;
+}
+
+.event-cards {
+  display: flex;
+  flex-wrap: wrap; /* تسمح بلف العناصر */
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px 0;
+  /* احذف overflow-x: auto; لأنه غير مطلوب مع اللف */
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 23px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  /* الآن نعطي عرض قريب من ثلث الحاوية مع مراعاة الهوامش */
+  width: calc((100% / 3) - 20px); /* 3 كروت في السطر مع فراغ 30px */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px; /* مسافة تحت الكروت */
+}
+
+
+.event-card img {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #d9d9d9;
+}
+
+.event-date {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 6px 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Helvetica, sans-serif;
+  width: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+ transform: translate(-60px, -110px);
+
+}
+
+.event-date .month {
+  font-size: 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+.event-date .day {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000;
+}
+
+.event-date .weekday {
+  font-size: 9px;
+  font-weight: 700;
+  color: white;
+  background-color: rgba(242, 183, 5, 1);
+  padding: 3px 6px;
+  border-radius: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+.event-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transform: translateX(80px); 
+
+}
+
+.event-info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.4;
+}
+
+.event-info .location,
+.event-info .time {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(124, 124, 124, 0.76);
+  line-height: 1.5;
+}
+
+.timezone-note {
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  color: rgba(140, 140, 140, 1);
+  line-height: 1.6;
+  max-width: 290px;
+}
+
+.participate-btn {
+  display: inline-block;
+  margin-top: 10px;
+  width: 290px;
+  height: 37px;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.02);
+  border: 0.5px solid rgba(207, 207, 207, 1);
+  border-radius: 8px;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 156%;
+  text-transform: capitalize;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+
+}
+
+.participate-btn:hover {
+  background-color: #f2b705;
+  color: white;
+}
+
+
+
+/* ✅ Responsive – Events Section */
+@media (max-width: 1024px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .section-desc {
+    font-size: 16px;
+  }
+
+  .event-cards {
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  .event-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  .event-info {
+    transform: translateX(0);
+    padding: 15px;
+    text-align: center;
+  }
+
+  .event-info h4 {
+    font-size: 16px;
+  }
+
+  .event-info .location,
+  .event-info .time {
+    font-size: 13px;
+  }
+
+  .event-date {
+    transform: translate(0, 0);
+    left: 15px;
+    bottom: 15px;
+    width: 50px;
+  }
+
+  .event-date .day {
+    font-size: 16px;
+  }
+
+  .event-date .month {
+    font-size: 10px;
+  }
+
+  .event-date .weekday {
+    font-size: 9px;
+    padding: 2px 4px;
+  }
+
+  .participate-btn {
+    width: 100%;
+    max-width: 290px;
+    margin: 10px auto 0;
+    font-size: 14px;
+  }
+}

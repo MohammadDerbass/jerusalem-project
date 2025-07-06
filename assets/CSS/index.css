@@ -1,0 +1,959 @@
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 979px;
+  background-image: url('/assets/img/aqsa.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  z-index: 2;
+  text-align: center;
+  max-width: 1000px;
+  padding: 20px;
+    text-align: left; /* ← يخلي كل النص يبدأ من اليسار */
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+.hero-content .read-more {
+  color: #f2b705;
+  font-weight: bold;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.hero-content .read-more:hover {
+  text-decoration: underline;
+}
+
+
+.side-buttons {
+  position: fixed;
+  left: 0;
+  top: 90%;
+transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.side-btn {
+  width: 160px;
+  height: 49px;
+  background-color: rgba(242, 183, 5, 1);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 0 25px 25px 0;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.side-btn:hover {
+  background-color: #222;
+  transform: translateX(5px);
+  color: white;
+}
+
+
+
+/* ✅ Services Section */
+.services-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 1364px; /* حسب التصميم */
+  margin: auto;
+  padding: 40px 20px;
+  top: 1172px;
+  left: 278px;
+}
+
+
+.service-card {
+  width: 323px;
+  height: 472;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ 
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 25px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: #111;
+  font-weight: 600;
+}
+
+.service-card h4 {
+  font-size: 15px;
+  margin-bottom: 18px;
+  color: #999;
+  font-weight: 400;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  min-height: 85px;
+}
+
+.service-btn {
+  width: 100%;
+  margin-top: auto;
+  padding: 12px 28px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background-color: #f9f9f9;
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.service-btn:hover {
+  background-color: #eee;
+  color: #000;
+}
+
+/*donation section*/
+.donation-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.donation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 112px;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.donation-img img {
+  width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.donation-text {
+  max-width: 600px;
+}
+
+.donation-date {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.donation-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.donation-text h2 span {
+  color: rgba(242, 183, 5, 1);
+}
+
+.donation-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.fade-text {
+  color: #666;
+}
+
+.fade-text a {
+  color:rgba(242, 183, 5, 1);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.donate-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #333;
+  transform: translateY(-3px);
+}
+
+
+.blog-section {
+  padding: 60px 0;
+  background: #fff;
+  font-family: sans-serif;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto 40px auto;
+  height: auto;
+  gap: 189px;
+}
+
+.blog-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.blog-header h2 span {
+  color: rgba(242, 183, 5, 1);
+}
+
+.blog-header .see-all {
+  border: 1px solid rgba(242, 183, 5, 1);
+  padding: 6px 18px;
+  border-radius: 25px;
+  font-size: 13px;
+  color: rgba(242, 183, 5, 1);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.blog-header .see-all:hover {
+  background-color: #f7b731;
+  color: #fff;
+}
+
+
+.blog-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.blog-header h2 span {
+  color: rgba(242, 183, 5, 1);
+}
+
+.see-all {
+  color: rgba(242, 183, 5, 1);
+  border: 1px solid #f7b731;
+  padding: 6px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.blog-main container{
+    padding: 60px 0;
+  background: #fff;
+  font-family: Helvetica, sans-serif;
+  max-width: 1350px;
+  margin-left: 285px; /* محاذاة من اليسار حسب Figma */
+  display: flex;
+  flex-direction: column;
+  gap: 70px; /* نفس الـ Gap بين العناصر */
+}
+
+.main-article {
+  position: relative;
+  width: 100%;
+  max-width: 1350px;
+  height: 518px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+  background-color: #000; /* لتجنب حدود بيضاء في حال تأخرت الصورة */
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.article-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 0 38px 40px 38px; /* ✅ padding تحت أكثر، فوق شيله */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 60%); /* ✅ Gradient خلفية سفلية */
+}
+
+.article-overlay h3 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 156%;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  width: 100%;
+}
+
+.article-overlay .date {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 156%;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+
+.tag-main {
+
+  top: 350px;
+  left: 20px;
+  background: rgba(242, 183, 5, 1);
+  width: 135px;
+  height: 35px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 29px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+.blog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.card {
+  width: 270px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 317px;
+  height: 199px;
+  border-radius: 30px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  display: block;
+  bottom: 10px;
+}
+
+.card h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 3%;
+  margin: 12px 16px 4px;
+  color: #111;
+  width: 317px;
+  height: 64px;
+}
+
+
+.card .date {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 156%;
+  letter-spacing: 3%;
+  color: #888;
+  margin: 0 16px 16px;
+}
+
+
+.tag {
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  width: 91px;
+  height: 19px;
+  background-color: rgba(242, 183, 5, 1);
+  color: rgba(255, 255, 255, 1);
+
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 156%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+
+
+.card-img-wrapper {
+  position: relative;
+}
+
+.hope-banner {
+  width: 100%;
+  height: 616px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.hope-banner-wrapper {
+  position: relative;
+  width: 1920px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hope-banner-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.donate-btn-banner {
+  position: absolute;
+  bottom: 100px;
+  left: 449px;
+  padding: 10px 20px;
+  width: 249px;
+  height: 54px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 34px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.donate-btn-banner:hover {
+  background-color: #444;
+}
+
+
+.events-header h2 {
+  width: 1424px;
+  height: 22px;
+
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Helvetica', sans-serif;
+  line-height: 156%;
+  letter-spacing: 10%;
+  color: #111;
+}
+.events-header h2 span {
+  color: rgba(242, 183, 5, 1);
+}
+
+.see-all-btn {
+  width: 123px;
+  height: 49px;
+  border: 1px solid rgba(242, 183, 5, 1);
+  border-radius: 38px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(242, 183, 5, 1);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.see-all-btn:hover {
+  background-color: rgba(242, 183, 5, 1);
+  color: #fff;
+}
+
+.events-header {
+    width: 1424px;
+    height: 69px;
+     margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.events-subtitle {
+  width: 1049px;
+  height: 14px; /* بإمكانك تحذفها لأن الارتفاع بيتحدد تلقائي */
+  color: #888;
+  font-size: 20px;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  line-height: 156%;
+  margin-top: 10px;
+}
+
+
+
+.events-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 1424px;
+  height: 550px;
+  margin: 40px auto 0; /* 40px من فوق + مركزي */
+  gap: 30px;
+  left: 248px;
+}
+
+
+.event-card {
+  background: #fff;
+  border-radius: 23px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  width: 432px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* ✅ الصورة */
+.event-card img {
+  width: 432px;
+  height: 245px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* ✅ المحتوى */
+.event-info-flex {
+  display: flex;
+  padding: 0 20px;
+  gap: 40px;
+  width: 307;
+  height: 219px;
+}
+
+/* ✅ التاريخ */
+.event-date {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  width: 34px;
+}
+
+.event-date .day {
+  font-size: 11px;
+  color: #333;
+  font-weight: 500;
+}
+
+.event-date strong {
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  color: #111;
+  margin: 3px 0;
+}
+
+.event-date .day-name {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 6px;
+  background-color: #f2b705;
+  color: white;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+/* ✅ النص */
+.event-info h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 170%;
+  letter-spacing: 3%;
+  color: #000;
+  width: 307px;
+  height: 67px;
+  font-family: Helvetica, sans-serif;
+  vertical-align: middle;
+  margin-bottom: 8px;
+}
+
+
+.event-info p {
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(124, 124, 124, 0.76);
+  line-height: 1.56;
+  letter-spacing: 0.45px;
+  margin-bottom: 12px;
+}
+.event-info p .event-time {
+  font-weight: 700;
+    color: rgba(124, 124, 124, 0.76);
+}
+
+.event-info button {
+  width: 290px;
+  height: 37px;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.02);
+  color: rgba(0, 0, 0, 1);
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  border-radius: 8px;
+  border: 0.5px solid rgba(207, 207, 207, 1);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.event-info button:hover {
+  background: #ddd;
+}
+
+/* ✅ العنوان + الزر */
+.what-we-do-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1424px;
+  margin: auto;
+  padding: 40px 20px 0;
+}
+
+.what-we-do-header h2 {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 156%;
+  letter-spacing: 0.1em;
+  color: #000;
+}
+
+.what-we-do-header h2 span {
+  color: rgba(242, 183, 5, 1);
+}
+
+/* ✅ زر "See All" */
+.see-all-btn {
+  background-color: transparent;
+  border: 1px solid rgba(242, 183, 5, 1);
+  color: rgba(242, 183, 5, 1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.see-all-btn:hover {
+  background-color: #f7b731;
+  color: white;
+}
+
+/* ✅ الشبكة */
+.what-we-do-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 1424px;
+  margin: auto;
+  padding: 30px 20px 60px;
+}
+/* ✅ الكرت */
+.what-we-do-card {
+  width: 432px;
+  height: 520px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+.what-we-do-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ✅ صورة الكرت */
+.what-we-do-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.card-overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* احذف الخلفية والتدرج بالكامل */
+  background: none;
+  height: auto; /* مهم جدًا */
+}
+
+
+.card-overlay2 h3 {
+  margin: 0 0 10px;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 156%;
+  letter-spacing: 0.03em; /* 3% */
+  color: rgba(242, 183, 5, 1);
+  vertical-align: middle;
+}
+
+
+.card-overlay2 p {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 156%;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 1); /* أبيض نقي */
+  margin: 0;
+}
+
+
+/* ✅ Responsive – Homepage */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-content {
+    position: static;
+    width: 100%;
+    padding: 40px 20px;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+    .side-buttons {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+
+  .side-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .services-container,
+  .donation-container,
+  .blog-header,
+  .events-header,
+  .events-grid,
+  .what-we-do-header,
+  .what-we-do-grid {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+    gap: 30px;
+  }
+
+  .service-card,
+  .event-card,
+  .what-we-do-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .donation-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .donation-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .donation-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .blog-main-container {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .main-article {
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img,
+  .card h4 {
+    width: 100%;
+  }
+
+  .hope-banner-wrapper {
+    width: 100%;
+  }
+
+  .donate-btn-banner {
+    position: static;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .events-header {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .events-subtitle {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+  }
+}

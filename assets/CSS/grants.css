@@ -1,0 +1,296 @@
+/*Grants page*/
+
+/* ✅ Main content */
+.grants-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* ✅ Accordion Style */
+.faq-accordion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-accordion details {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px 20px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.03);
+}
+
+.faq-accordion summary {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.faq-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-accordion details[open] summary::after {
+  content: "▲";
+  font-size: 12px;
+  color: #f2b705;
+  transform: rotate(180deg);
+}
+
+.faq-accordion summary::after {
+  content: "▼";
+  font-size: 12px;
+  color: #f2b705;
+  transition: 0.2s;
+}
+
+.faq-accordion p {
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* ✅ Apply Box Style */
+.apply-box {
+  flex: 1;
+  background-color: #fff;
+  border: 1.5px solid #f2b705;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.02);
+}
+
+.apply-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.apply-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+}
+
+
+
+.shurooq-section {
+  position: relative;
+  background-image: url('/assets/img/shurooq-bg.png'); /* الصورة الخلفية الكبيرة */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.shurooq-overlay {
+  background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.6));
+  padding: 80px 0;
+}
+
+.shurooq-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.shurooq-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.shurooq-text h2 {
+  color: #f2b705;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.shurooq-text .subtitle {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.shurooq-text .description {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.shurooq-btn {
+  display: inline-block;
+  background: #f2b705;
+  color: #000;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.shurooq-btn:hover {
+  background: #d6a200;
+}
+
+.shurooq-foreground-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shurooq-foreground-image img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transform: rotate(-1deg);
+}
+
+
+
+
+
+
+
+
+
+.post-grantee {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+}
+
+.post-box {
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 50px 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.03);
+}
+
+.post-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.post-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.post-columns ul {
+  flex: 1;
+  min-width: 250px;
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.8;
+}
+
+
+/* ✅ Responsive – Grants Page */
+@media (max-width: 1024px) {
+  .grants-content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 15px;
+  }
+
+  .faq-accordion,
+  .apply-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .apply-box {
+    padding: 20px;
+  }
+
+  .apply-box h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .apply-box ul {
+    font-size: 13px;
+    padding-left: 16px;
+  }
+
+  .shurooq-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 15px;
+    align-items: center;
+  }
+
+  .shurooq-text {
+    text-align: center;
+  }
+
+  .shurooq-text h2 {
+    font-size: 22px;
+  }
+
+  .shurooq-text .subtitle,
+  .shurooq-text .description {
+    font-size: 14px;
+  }
+
+  .shurooq-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .shurooq-foreground-image img {
+    max-width: 90%;
+  }
+
+  .post-box {
+    padding: 30px 20px;
+  }
+
+  .post-box h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .post-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .post-columns ul {
+    font-size: 13px;
+    padding-left: 18px;
+  }
+}

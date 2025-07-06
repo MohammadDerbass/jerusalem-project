@@ -1,0 +1,170 @@
+/* board page */
+.page-hero {
+  position: relative;
+  width: 1939px;
+  height: 450px;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  margin: 0 auto;
+}
+
+.page-hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1939px;
+  height: 396px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.page-hero div {
+  position: relative;
+  z-index: 1;
+  padding: 40px 60px;
+  width: 100%;
+}
+
+.page-hero p {
+  font-size: 20px;
+  color: #ddd;
+}
+
+.page-hero h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.page-hero p:last-of-type {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.breadcrumb {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.breadcrumb a {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #f1f1f1;
+}
+
+.board-card {
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  align-items: center;
+  transition: 0.3s ease;
+  margin-bottom: 50px;
+  max-width: 1342px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.board-card img {
+  width: 269px;
+  height: 379px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.board-info {
+  flex: 1;
+  max-width: 891px;
+}
+
+.board-info h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 156%;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.board-info .role {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 156%;
+  color: #e0a800;
+  margin-bottom: 10px;
+}
+
+.board-info .bio {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 156%;
+  color: rgba(91, 91, 91, 1);
+}
+
+/* ✅ Media Queries */
+@media (max-width: 1024px) {
+  .page-hero {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .page-hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .page-hero div {
+    padding: 20px;
+  }
+
+  .page-hero h1 {
+    font-size: 28px;
+  }
+
+  .page-hero p {
+    font-size: 16px;
+  }
+
+  .board-card {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .board-card img {
+    width: 220px;
+    height: auto;
+  }
+
+  .board-info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .board-info h3 {
+    font-size: 22px;
+  }
+
+  .board-info .role,
+  .board-info .bio {
+    font-size: 16px;
+  }
+}

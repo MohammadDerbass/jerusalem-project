@@ -1,0 +1,175 @@
+/*diabetes page*/
+.page-hero {
+  position: relative;
+  width: 1939px;         /* عرض ثابت */
+  height: 450px;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  margin: 0 auto;        /* يخليها بالنص */
+}
+
+.page-hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1939px;         /* نفس العرض */
+  height: 396px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+
+.page-hero div {
+  position: relative;
+  z-index: 1;
+  padding: 40px 60px;
+  width: 100%;
+}
+
+.page-hero p{
+  font-size: 20px;
+  color: #ddd;
+}
+
+.page-hero h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.page-hero p:last-of-type {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.breadcrumb {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.breadcrumb a {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #f1f1f1;
+}
+
+
+
+.diabetes-section {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.diabetes-box,
+.checkpoint-box {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  /* border: 1px solid #ccc; ← تم حذفه */
+}
+
+.diabetes-img,
+.checkpoint-img {
+  width: 285.38px;
+  height: 263px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.diabetes-info,
+.checkpoint-info {
+  max-width: 1018px;
+  font-family: Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 1);
+}
+
+.diabetes-info h3,
+.checkpoint-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 15px;
+}
+
+.diabetes-info p,
+.checkpoint-info p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+/* ✅ Responsive – Diabetes Page */
+@media (max-width: 1024px) {
+  .page-hero {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .page-hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .page-hero div {
+    padding: 20px;
+  }
+
+  .page-hero h1 {
+    font-size: 28px;
+  }
+
+  .page-hero p {
+    font-size: 14px;
+  }
+
+  .diabetes-box,
+  .checkpoint-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .diabetes-img,
+  .checkpoint-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .diabetes-info,
+  .checkpoint-info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .diabetes-info h3,
+  .checkpoint-info h3 {
+    font-size: 18px;
+  }
+
+  .diabetes-info p,
+  .checkpoint-info p {
+    font-size: 14px;
+  }
+}

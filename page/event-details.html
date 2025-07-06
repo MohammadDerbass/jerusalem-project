@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Event Details - The Jerusalem Fund</title>
+  <link rel="stylesheet" href="/assets/CSS/style.css" />
+   <link rel="stylesheet" href="/assets/CSS/event-details.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <div id="header-container"></div>
+
+  <!-- ✅ Hero Section -->
+<section class="page-hero">
+  <img src="/assets/img/who-banner.png" alt="Banner" />
+  <div class="page-hero-content">
+  <div class="breadcrumb">
+  <a href="/page/index.html">The Jerusalem Fund</a>
+  <span>&nbsp;&gt;&nbsp;</span>  
+  <a href="/page/events.html">Events</a>  
+  <span>&nbsp;&gt;&nbsp;</span>
+  <span>Event Details</span> 
+</div>
+
+    <h1>Event Details </h1>
+      <p>
+Your support can make a life-changing impact. Explore our latest appeals and contribute to those in urgent need today    </p>
+  </div>
+</section>
+
+  <!-- ✅ Event Detail Card -->
+<section class="event-detail-section container">
+  <div class="event-detail-card vertical-layout">
+    <img src="/assets/img/event3.png" alt="Art & Culture Event" class="event-image" />
+    
+    <div class="event-content">
+      <div class="event-date">
+        <span class="month">MAR</span>
+        <span class="day">15</span>
+        <span class="weekday">FRI</span>
+      </div>
+      <div class="event-detail-info">
+        <h2>Art & Culture: An Evening of Expression</h2>
+        <p>
+          Join us for a morning of stewardship along the banks of the Willow Creek! Volunteers of all ages will work together to remove litter, invasive plants, and debris, helping to restore habitat for fish and wildlife. We’ll provide gloves, trash bags, and a brief orientation on local species identification—just bring your enthusiasm and a reusable water bottle. Together, we can keep our waterways clean and healthy for generations to come.
+        </p>
+        <p>
+          Gallery 21 | 21 rue de la Paix 75002 Paris <strong>6:00 PM - 9:00 PM</strong> Explore local art and engage with artists.
+        </p>
+        <a href="#" class="participate-btn full-width">Participate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- ✅ Footer -->
+  <div id="footer-container"></div>
+
+  <script>
+    fetch('/components/header.html').then(r => r.text()).then(data => document.getElementById('header-container').innerHTML = data);
+    fetch('/components/footer.html').then(r => r.text()).then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
+
+</body>
+</html>
