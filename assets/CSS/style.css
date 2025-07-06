@@ -209,7 +209,7 @@
 
   .menu-toggle {
       right: auto;         /* إلغاء تمركز اليمين */
-  left: 101px; 
+  left: 100px; 
     display: block !important;
     font-size: 26px;
     color: black;
