@@ -281,18 +281,18 @@
 <div id="footer"></div>
 
 <script>
-fetch("/components/header.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
+  fetch("/components/header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
 
-    // ✅ استدعاء ملف menu.js بعد تحميل الهيدر
-    const script = document.createElement("script");
-    script.src = "/assets/JS/menu.js";
-    document.body.appendChild(script);
-  });
-
+      // ⬇️ هنا نضيف سكربت المينيو
+      const script = document.createElement("script");
+      script.src = "/assets/js/menu.js";
+      document.body.appendChild(script);
+    });
 </script>
+
 <script>
   fetch("/components/footer.html")
     .then(res => res.text())

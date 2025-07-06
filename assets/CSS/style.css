@@ -245,19 +245,20 @@
   .nav-links {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 100px;
     right: 10px;
-    background: white;
     flex-direction: column;
+    background-color: white;
     gap: 10px;
     padding: 15px;
+    z-index: 2000;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    z-index: 1000;
   }
 
   .nav-links.active {
     display: flex;
   }
+
 
   .search-icon {
     display: none;
