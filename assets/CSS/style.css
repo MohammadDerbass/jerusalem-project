@@ -237,10 +237,20 @@
 
 
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    z-index: 1001;
-  }
+.menu-toggle {
+  display: block;
+  font-size: 26px;
+  color: black;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1100;
+  background-color: white; /* اختياري */
+  padding: 6px 10px;        /* اختياري */
+  border-radius: 6px;       /* اختياري */
+}
+
 
   .nav-links {
     display: none;
