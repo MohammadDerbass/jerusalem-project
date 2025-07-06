@@ -208,6 +208,8 @@
   }
 
   .menu-toggle {
+      right: auto;         /* إلغاء تمركز اليمين */
+  left: 50px; 
     display: block !important;
     font-size: 26px;
     color: black;
