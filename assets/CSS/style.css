@@ -15,17 +15,15 @@
 /* ✅ Top Strip */
 .top-strip {
   background: rgba(242, 183, 5, 1);
-
-  width: 100%; /* ✅ بدل 1921px */
+  width: 100%;
   height: 75px;
   padding: 8px 0;
-  position: fixed; /* ✅ يضل ثابت */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 .strip-container {
   max-width: 1350px;
@@ -35,23 +33,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  margin: auto; /* لتوسيطه */
+  margin: auto;
 }
-
 
 .phone {
   font-weight: bold;
   color: black;
-  display: flex;  
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   font-size: 18px;
-
-  padding: 5px 10px; /* بديل عن height */
-  max-width: 100%;   /* يمنع كسر التصميم */
+  padding: 5px 10px;
+  max-width: 100%;
 }
-
 
 .phone-icon {
   background-color: black;
@@ -65,30 +60,14 @@
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .phone-icon {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
-  }
-}
-
-
 .phone i {
   margin-right: 5px;
 }
 
 .social {
   display: flex;
-  gap: 21px; /* المسافة بين الأيقونات */
+  gap: 21px;
 }
-@media (max-width: 768px) {
-  .social {
-    gap: 12px;
-  }
-}
-
-
 
 .social a {
   display: inline-flex;
@@ -104,36 +83,24 @@
   transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .social a {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
-  }
-}
-
-
 .social a:hover {
   background-color: black;
   color: white;
 }
 
-
-
 /* ✅ Header */
 .main-header {
   background-color: white;
-  width: 100%; /* ✅ بدل 1921px */
+  width: 100%;
   height: 100px;
   padding: 15px 0;
   border-bottom: 1px solid #ccc;
-  position: fixed; /* ✅ يضل ثابت */
-  top: 75px; /* ✅ تحت الـ top-strip مباشرة */
+  position: fixed;
+  top: 75px;
   left: 0;
   z-index: 999;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* ظل خفيف */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
-
 
 .header-container {
   max-width: 1350px;
@@ -144,10 +111,10 @@
   justify-content: space-between;
   align-items: center;
   height: 62px;
-  flex-wrap: wrap; /* إذا حبيت العناصر تنزل تحت لبعض بالشاشات الصغيرة */
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1100;
 }
-
-
 
 .logo-box {
   display: flex;
@@ -161,16 +128,6 @@
   object-fit: contain;
 }
 
-@media (max-width: 768px) {
-  .logo-img {
-    width: 180px;
-    height: auto;
-  }
-}
-
-
-
-
 .nav-links {
   display: flex;
   gap: 20px;
@@ -183,13 +140,6 @@
   font-weight: 500;
   font-size: 20px;
 }
-@media (max-width: 768px) {
-  .nav-links a {
-    font-size: 16px;
-  }
-}
-
-
 
 .search-icon {
   background-color: black;
@@ -205,52 +155,32 @@
   justify-content: center;
 }
 
+/* ✅ زر القائمة المعدّل */
+.menu-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .search-icon {
+  .phone-icon {
     width: 36px;
     height: 36px;
-    font-size: 12px;
-    padding: 8px;
+    font-size: 16px;
   }
-}
 
-.header-container {
-  position: relative;
-   z-index: 1100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
+  .social {
+    gap: 12px;
+  }
 
-.menu-toggle {
-  display: block !important;
-  font-size: 26px;
-  cursor: pointer;
-  color: black;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  z-index: 1100;
-}
+  .social a {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
 
-
-@media (max-width: 768px) {
-.menu-toggle {
-  display: block;
-  font-size: 26px;
-  color: black;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1100;
-  background-color: white; /* اختياري */
-  padding: 6px 10px;        /* اختياري */
-  border-radius: 6px;       /* اختياري */
-}
-
+  .logo-img {
+    width: 180px;
+    height: auto;
+  }
 
   .nav-links {
     display: none;
@@ -269,13 +199,39 @@
     display: flex;
   }
 
-
   .search-icon {
     display: none;
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .menu-toggle {
+    display: block !important;
+    font-size: 26px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1200;
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .phone {
+    font-size: 15px;
+    width: auto;
   }
 }
-
-
 
 
 
