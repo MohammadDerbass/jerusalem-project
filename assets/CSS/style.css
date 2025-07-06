@@ -209,13 +209,12 @@
 
   .menu-toggle {
       right: auto;         /* إلغاء تمركز اليمين */
-  left: 50px; 
+  left: 500px; 
     display: block !important;
     font-size: 26px;
     color: black;
     position: absolute;
     top: 50%;
-    right: 20px;
     transform: translateY(-50%);
     z-index: 1200;
     background-color: white;
